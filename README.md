@@ -11,10 +11,6 @@ siteCtx :: Context String
 siteCtx = 
     constField "baseurl" "http://localhost:8000" `mappend` 
     constField "site_description" "my beautiful blog" `mappend`
-    constField "instagram_username" "katychuang.nyc" `mappend`
-    constField "twitter_username" "katychuang" `mappend`
-    constField "github_username" "katychuang" `mappend`
-    constField "google_username" "katychuang" `mappend`
     defaultContext
 ```
 

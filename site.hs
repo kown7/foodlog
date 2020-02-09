@@ -47,7 +47,7 @@ main = hakyll $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
+                    constField "title" "Zürich Food Log"     `mappend`
                     siteCtx
 
             getResourceBody
@@ -67,9 +67,7 @@ postCtx =
 siteCtx :: Context String
 siteCtx =
     constField "baseurl" "http://localhost:8000" `mappend`
-    constField "site_description" "my beautiful blog" `mappend`
-    constField "instagram_username" "katychuang.nyc" `mappend`
-    constField "twitter_username" "katychuang" `mappend`
-    constField "github_username" "katychuang" `mappend`
-    constField "google_username" "katychuang" `mappend`
+    constField "site_description" "logging our food excursions" `mappend`
+    -- constField "twitter_username" "n/a" `mappend`
+    constField "github_username" "kown7" `mappend`
     defaultContext
