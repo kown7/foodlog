@@ -67,7 +67,8 @@ postCtx =
 
 siteCtx :: Context String
 siteCtx =
-    constField "baseurl" "http://localhost:8000" `mappend`
+    --constField "baseurl" "http://localhost:8000" `mappend`
+    constField "baseurl" "https://kown7.github.io/foodlog" `mappend`
     constField "site_description" "logging our food excursions" `mappend`
     -- constField "twitter_username" "n/a" `mappend`
     constField "github_username" "kown7" `mappend`
