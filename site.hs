@@ -48,6 +48,7 @@ main = hakyll $ do
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Zürich Food Log"     `mappend`
+                    constField "postsContent" "true"         `mappend`
                     siteCtx
 
             getResourceBody
