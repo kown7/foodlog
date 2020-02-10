@@ -6,6 +6,8 @@ This theme is a fork of [CleanMagicMedium-Jekyll](https://github.com/SpaceG/Clea
 
 Note that this theme has specific design features that require a custom written [siteCtx context](https://github.com/katychuang/CleanMagic-hakyll/blob/master/site.hs#L68) that contains specific field values mapped to the template fields. For example, `$site_description$` in the template files is mapped to the constant field with the string, "my beautiful blog".
 
+The `baseurl` needs adaption if you want to see your results locally.
+
 ```haskell
 siteCtx :: Context String
 siteCtx = 
