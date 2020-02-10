@@ -7,7 +7,7 @@ import           Text.Pandoc
 
 --------------------------------------------------------------------------------
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     match "static/*/*" $ do
         route idRoute
         compile copyFileCompiler
@@ -73,3 +73,9 @@ siteCtx =
     -- constField "twitter_username" "n/a" `mappend`
     constField "github_username" "kown7/foodlog" `mappend`
     defaultContext
+
+config :: Configuration
+config = defaultConfiguration
+    { destinationDirectory = "docs"
+    , previewPort          = 8000
+    }
