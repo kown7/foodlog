@@ -1,3 +1,10 @@
+# WebP Animated Image
+
+```bash
+for i in $(ls butcher*.jpg); do cwebp $i -o $i.webp; done
+webpmux -frame butchers_table1.jpg.webp +4000 -frame butchers_table2.jpg.webp +8000 -loop 0 -o butchers_table.webp
+```
+
 # CleanMagic for Hakyll
 
 This theme is a fork of [CleanMagicMedium-Jekyll](https://github.com/SpaceG/CleanMagicMedium-Jekyll) originally published by Lucas Gatsas.
